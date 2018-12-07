@@ -26,7 +26,7 @@ export default {
       DEADLINES :deadlinesJSON,
 
       EVENTS: {
-        title: 'PAST EVENTS 2013 - 2017'
+        title: 'PAST EVENTS 2013 - 2017 -2 '
       }
     }
   }
