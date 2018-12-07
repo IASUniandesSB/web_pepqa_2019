@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "0fd5ee3c7f53df4571e1c383789a8f9c",
-    "url": "/favicon/browserconfig.xml"
+    "revision": "44aae40fc0b3a6542d45c476b914d836",
+    "url": "/favicon/favicon-32x32.png"
   },
   {
     "revision": "f4aa5419e5ddf5b69497",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/img/bg-pattern.ffb59509.png"
   },
   {
-    "revision": "53cc2878d5794996fcbacb539d5413ab",
+    "revision": "9979a1e1234830d9cdd7cdb35e864473",
     "url": "/index.html"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.32b50df7.js"
   },
   {
-    "revision": "44aae40fc0b3a6542d45c476b914d836",
-    "url": "/favicon/favicon-32x32.png"
+    "revision": "0fd5ee3c7f53df4571e1c383789a8f9c",
+    "url": "/favicon/browserconfig.xml"
   },
   {
     "revision": "2ae725d51ee68a8ee751805160a20a89",
@@ -52,16 +52,16 @@ self.__precacheManifest = [
     "url": "/favicon/html_code.html"
   },
   {
+    "revision": "d2ea71f1b9dc39f66fe52693a28e18f1",
+    "url": "/favicon/safari-pinned-tab.svg"
+  },
+  {
     "revision": "117d1d7518ac684810640fe300d7fb0b",
     "url": "/favicon/mstile-150x150.png"
   },
   {
     "revision": "c19fc7e9fff8e2d810c26ff21ce5a04d",
     "url": "/favicon/site.webmanifest"
-  },
-  {
-    "revision": "d2ea71f1b9dc39f66fe52693a28e18f1",
-    "url": "/favicon/safari-pinned-tab.svg"
   },
   {
     "revision": "fe37d8bd0da42c587e13",
