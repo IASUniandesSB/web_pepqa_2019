@@ -1,0 +1,14 @@
+{
+  "name" : "PEPQA 2019 | Manizales | UNAL Manizales",
+  "country" : "COLOMBIA",
+  "city" : "MANIZALES",
+  "venue" : {
+    "name" : {
+      "short" : "UNAL MANIZALES",
+      "long" : "UNIVERSIDAD NACIONAL DE COLOMBIA, SEDE MANIZALES"
+    },
+    "address" : "CALLE 15# 5 -3 Sur, Manizales",
+    "description" : "Manizales is the capital city of one of the smallest Colombian departments. The city is described as having an 'abrupt topography', and lies on the Colombian Central Mountain Range (part of the longest continental mountain range, The Andes), with a great deal of ridgelines and steep slopes, which, combined with the seismic instability of the area, has required architectural adaptations and public works to make the city safer. Even though Manizales has this very difficult topography, there are many coffee plantations in its fertile lands. The city is located in the northern part of the Colombian Coffee-Growers Axis ('Eje Cafetero'), near the volcano Nevado del Ruiz, which has an altitude of 5,321 meters (17,457.3 ft).",
+    "picture" : ""
+  }
+}

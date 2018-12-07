@@ -1,0 +1,17 @@
+[
+  {
+    "name" : "Facebook",
+    "class" : "fab fa-facebook-f",
+    "link" : "https://www.facebook.com/pepqa/?fref=ts"
+  },
+  {
+    "name" : "Twitter",
+    "class" : "fab fa-twitter",
+    "link" : "https://twitter.com/PEPQA_co"
+  },
+  {
+    "name" : "LinkedIn",
+    "class" : "fab fa-linkedin-in",
+    "link" : "https://www.linkedin.com/groups/6964610"
+  }
+]

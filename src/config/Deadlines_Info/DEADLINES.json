@@ -1,0 +1,29 @@
+{
+    "conference": {
+      "from" : {
+        "year" : "2019",
+        "month":"May",
+        "day" : "30"
+      },
+      "to":{
+        "year" : "2019",
+        "month":"May",
+        "day" : "31"
+      }
+    },
+    "paper_submission": {
+      "year" : "2019",
+      "month":"Febrary",
+      "day" : "15"
+    },
+    "acceptance_notification": {
+      "year" : "2019",
+      "month":"April",
+      "day" : "1"
+    },
+    "camera_ready": {
+      "year" : "2019",
+      "month":"April",
+      "day" : "28"
+    }
+}
