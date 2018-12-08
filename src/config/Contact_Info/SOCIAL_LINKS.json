@@ -13,5 +13,10 @@
     "name" : "LinkedIn",
     "class" : "fab fa-linkedin-in",
     "link" : "https://www.linkedin.com/groups/6964610"
+  },
+  {
+    "name" : "Email",
+    "class" : "fas fa-envelope",
+    "link" : "pepqa@uniandes.edu.co"
   }
 ]

@@ -1,7 +1,7 @@
 <script>
 
-import vHeader from './components/shared/header'
-import vFooter from './components/shared/footer'
+import vHeader from './components/shared/header/header'
+import vFooter from './components/shared/footer/footer'
 
 export default {
   name: 'vApp',
@@ -25,6 +25,13 @@ export default {
 
   </div>
 </template>
+
+
+<style lang="scss">
+  @import "~bootstrap/scss/bootstrap";  // import complete bootstrap.scss source from node_modules using ~ alias
+</style>
+
+
 <style lang="less">
 
 @import './styles/main.less';

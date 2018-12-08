@@ -1,0 +1,15 @@
+[
+  {
+    "name" : "IEEE",
+    "link" : "https://www.ieee.org",
+    "image" : "technical_co_sponsors_ieee_logo.jpg"
+  },{
+    "name" : "IEEEColombia",
+    "link" : "https://www.ieee.org.co",
+    "image" : "technical_co_sponsors_ieee_colombia_logo.jpg"
+  },{
+    "name" : "IAS",
+    "link" : "https://www.ias.ieee.org",
+    "image" : "sponsor_ias_logo.jpg"
+  }
+]

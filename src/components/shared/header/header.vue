@@ -26,7 +26,7 @@ export default {
       DEADLINES :deadlinesJSON,
 
       EVENTS: {
-        title: 'PAST EVENTS 2013 - 2017 -2 '
+        title: 'PAST EVENTS'
       }
     }
   }
@@ -67,32 +67,35 @@ export default {
         <div class="header-menu">
 
           <div class="header-menu-item">
-            <router-link to="/about">About</router-link>
+            <b-button size="sm">
+                <router-link to="/about">About</router-link>
+            </b-button>
           </div>
 
           <div class="header-menu-item author">
-            <div class="title">AUTHORS <i class="fas fa-caret-down"></i></div>
-            <div class="options">
-              <router-link to="/authors/call4papers">Call For Papers</router-link>
-              <br>
-              <router-link to="/authors/guidelines">Guidelines</router-link>
-            </div>
+                <b-dropdown id="ddown1" text="AUTHORS" size="sm">
+                  <b-dropdown-item><router-link to="/authors/call4papers">Call For Papers</router-link></b-dropdown-item>
+                  <b-dropdown-item><router-link to="/authors/guidelines">Guidelines</router-link></b-dropdown-item>
+                </b-dropdown>
           </div>
 
           <div class="header-menu-item location">
-            <div class="title">LOCATION <i class="fas fa-caret-down"></i></div>
-            <div class="options">
-              <router-link to="/location/city"> {{ LOCATION.city }} </router-link>
-              <router-link to="/location/venue"> {{ LOCATION.venue.name.short }} </router-link>
-            </div>
+             <b-dropdown id="ddown2" text="LOCATION" size="sm">
+                  <b-dropdown-item><router-link to="/location/city"> {{ LOCATION.city }} </router-link></b-dropdown-item>
+                  <b-dropdown-item><router-link to="/location/venue"> {{ LOCATION.venue.name.short }} </router-link></b-dropdown-item>
+              </b-dropdown>
           </div>
 
           <div class="header-menu-item">
-            <router-link to="/deadlines"> DEADLINE </router-link>
+             <b-button size="sm">
+                <router-link to="/deadlines"> DEADLINE </router-link>
+            </b-button>
           </div>
 
           <div class="header-menu-item">
-            <router-link to="/pastEvents">{{ EVENTS.title }}</router-link>
+            <b-button size="sm">
+                  <router-link to="/pastEvents">{{ EVENTS.title }}</router-link>
+            </b-button>
           </div>
 
 
@@ -113,9 +116,10 @@ export default {
   </header>
 </template>
 
-<style scoped lang="less">
-@import (reference) '../../styles/main.less';
 
+
+<style scoped lang="less">
+@import (reference) '../../../styles/main.less';
 header{
   width: 100%;
   height: auto;
@@ -123,9 +127,6 @@ header{
   padding: 0em;
   margin: 0px;
 }
-
-
-
 .header-links{
   display: block;
   width: 100%;
@@ -143,8 +144,6 @@ header{
     border-radius: 0.25em;
   .layout-rows-between();
 }
-
-
 
 
 .IEEE-Links{
@@ -215,6 +214,10 @@ header{
         background-color: #0077B5;
         i{ font-size: 10px;}
       }
+      &.Email{
+        background-color: @color-green-normal;
+        i{ font-size: 12px;}
+      }
       i{
         color: white;
       }
@@ -234,12 +237,15 @@ header{
   }
 }
 
-.header-title{
+.header-title,.header-deadline{
   font-weight: 700;
   text-align: left;
   color: black;
-  max-width: 25em;
-  padding: 0em 2.5em;
+  font-size: 0.9em;
+  padding: 0em 1.5em;
+}
+.header-title{
+    max-width: 22em;
 }
 
 .header-menu{
@@ -258,14 +264,6 @@ header{
 
   a,.title{
     color: black;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-right: thick solid #ddd;
-    border-right-width: 1px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     text-decoration: none;
     text-transform: uppercase;
     &:hover{
@@ -277,34 +275,19 @@ header{
 
 .header-menu-item{
   cursor: pointer;
-
-
-  &.author{
-      .title{
-
-  }
-  .options{
-   display: block;
-   position: fixed;
-   top: 9em;
-   right: 18em;
-   width: 12em;
-  }
-
-  }
-  &.location{
-  .title{
-
-  }
-  .options{
-   display: block;
-   position: fixed;
-   top: 10em;
-   right: 0px;
-  }
+  &.author,&.location{
+     a,.title{
+      color: black;
+      margin: 0 auto;
+      border-right-width: 0px;
+     }
   }
 }
 
+
+
+
 </style>
+
 
 

@@ -1,0 +1,11 @@
+[
+  {
+    "name" : "Uniandes",
+    "link" : "http://www.uniandes.edu.co/",
+    "image" : "patron_uniandes_logo.jpg"
+  },{
+    "name" : "UnalManizales",
+    "link" : "http://www.unal.edu.co/",
+    "image" : "patron_unal_manizales_logo.jpg"
+  }
+]
