@@ -113,6 +113,10 @@ export default {
 
     </nav>
 
+    <div class="header-mobile">
+
+    </div>
+
   </header>
 </template>
 
@@ -227,6 +231,8 @@ header{
 
 
 .row{
+  padding-left: 0px;
+  padding-right: 0px;
   .layout-rows-left();
 }
 
@@ -242,7 +248,13 @@ header{
   text-align: left;
   color: black;
   font-size: 0.9em;
-  padding: 0em 1.5em;
+
+}
+.header-title{
+padding: 0em 1em;
+}
+.header-deadline{
+ padding: 0em 0.25em;
 }
 .header-title{
     max-width: 22em;

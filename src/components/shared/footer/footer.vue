@@ -10,6 +10,11 @@ const technicalJSON = require('@/config/Event_Info/TECHNICAL.json');
 
 export default {
   name: 'vFooter',
+  methods:{
+    getImageURL(imgFolder,imgFile){
+      return '/img/logos/'+imgFolder+'/'+imgFile;
+    }
+  },
   data(){
     return{
       SOCIAL: socialLinksJSON,
@@ -34,39 +39,33 @@ export default {
             Contact Us!
           </div>
 
-
-
-          <div class="footer-patrons">
-            <div class="footer-patrons-patron" v-for="item in PATRONS">
-              <a :href="item.link" target="_blank">
-                <img src="../../../assets/logos/patrons/patron_uniandes_logo.jpg">
-              </a>
+          <div class="row layout-columns">
+            <div class="footer-patrons layout-columns">
+              <div class="footer-patrons-patron" v-for="item in PATRONS">
+                <a :href="item.link" target="_blank">
+                  <img :src="getImageURL('patrons',item.image)">
+                </a>
+              </div>
+            </div>
+            <div class="footer-sponsors layout-columns">
+              <div class="footer-sponsors-item" v-for="item in SPONSORS">
+                <a :href="item.link" target="_blank">
+                   <img :src="getImageURL('sponsors',item.image)">
+                </a>
+              </div>
             </div>
           </div>
 
-          <br>
-
-          <div class="footer-sponsors">
-            <div class="footer-sponsors-item" v-for="item in SPONSORS">
-              <a :href="item.link" target="_blank">
-
-                {{item.name}}
-               </a>
+          <div class="row layout-columns">
+            <div class="footer-technical-cosponsors">
+              <div class="footer-technical-cosponsors-item" v-for="item in TECHNICAL">
+                <a :href="item.link" target="_blank">
+                 <img :src="getImageURL('technical-co-sponsors',item.image)">
+                </a>
+              </div>
             </div>
+            <div class="footer-technical-cosponsors"></div>
           </div>
-
-           <br>
-
-          <div class="footer-technical-cosponsors">
-            <div class="footer-technical-cosponsors-item" v-for="item in TECHNICAL">
-              <a :href="item.link" target="_blank">
-              {{item.name}}
-              </a>
-            </div>
-          </div>
-
-          <div class="footer-technical-cosponsors"></div>
-
 
 
 
@@ -106,44 +105,49 @@ export default {
     border-radius: 0.25em;
   }
   .SOCIAL-Links{
-  font-size: 30px;
-  padding: 15px;
-  li{
-    a{
-      display: inline-block;
-      vertical-align: middle;
+    font-size: 30px;
+    padding: 15px;
+    li{
+      a{
+        display: inline-block;
+        vertical-align: middle;
 
-      height: 1em;
-      width: 1em;
+        height: 1em;
+        width: 1em;
 
-      margin: 0em 0.33em;
-      border-radius: 100%;
+        margin: 0em 0.33em;
+        border-radius: 100%;
 
-      &:hover{
-        opacity: 0.6;
-      }
-      &.Facebook{
-        background-color: #3b5998;
-        i{ font-size: 12px; position: relative; left: 1px; top:-1px}
-      }
-      &.Twitter{
-        background-color: #00aced;
-        i{ font-size: 10px;}
-      }
-      &.LinkedIn{
-        background-color: #0077B5;
-        i{ font-size: 10px;}
-      }
-      &.Email{
-        background-color: @color-green-normal;
-        i{ font-size: 12px;}
-      }
-      i{
-        color: white;
+        &:hover{
+          opacity: 0.6;
+        }
+        &.Facebook{
+          background-color: #3b5998;
+          i{ font-size: 12px; position: relative; left: 1px; top:-1px}
+        }
+        &.Twitter{
+          background-color: #00aced;
+          i{ font-size: 10px;}
+        }
+        &.LinkedIn{
+          background-color: #0077B5;
+          i{ font-size: 10px;}
+        }
+        &.Email{
+          background-color: @color-green-normal;
+          i{ font-size: 12px;}
+        }
+        i{
+          color: white;
+        }
       }
     }
   }
-}
+
+  .row{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 </style>
 
 

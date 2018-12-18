@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.fcefa2cf56b58bb1d86f418af42c9cb8.js"
+  "/precache-manifest.95f98c3da373c210d61f31bab1055aa3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "pepqa_web"});

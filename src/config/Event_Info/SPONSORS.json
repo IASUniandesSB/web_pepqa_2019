@@ -2,14 +2,14 @@
   {
     "name" : "IASColombia",
     "link" : "https://www.ieee.org.co",
-    "image" : "sponsor_ias_colombia_logo.jpg"
+    "image" : "sponsor_ias_colombia_logo.png"
   },{
     "name" : "IASUniandesSB",
     "link" : "http://sb.jlmayorga.com.co",
-    "image" : "sponsor_ias_uniandes_sb_logo.jpg"
+    "image" : "sponsor_ias_uniandes_sb_logo.png"
   },{
     "name" : "IASUnalManizalesSB",
     "link" : "http://web.pepqa.co",
-    "image" : "sponsor_ias_unal_manizales_sb_logo.jpg"
+    "image" : "sponsor_ias_unal_manizales_sb_logo.png"
   }
 ]

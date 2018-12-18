@@ -2,14 +2,14 @@
   {
     "name" : "IEEE",
     "link" : "https://www.ieee.org",
-    "image" : "technical_co_sponsors_ieee_logo.jpg"
+    "image" : "technical_co_sponsors_ieee_logo.png"
   },{
     "name" : "IEEEColombia",
     "link" : "https://www.ieee.org.co",
-    "image" : "technical_co_sponsors_ieee_colombia_logo.jpg"
+    "image" : "technical_co_sponsors_ieee_colombia_logo.png"
   },{
     "name" : "IAS",
     "link" : "https://www.ias.ieee.org",
-    "image" : "sponsor_ias_logo.jpg"
+    "image" : "sponsor_ias_logo.png"
   }
 ]
