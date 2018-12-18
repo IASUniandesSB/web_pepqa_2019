@@ -39,37 +39,74 @@ export default {
             Contact Us!
           </div>
 
-          <div class="row layout-columns">
-            <div class="footer-patrons layout-columns">
-              <div class="footer-patrons-patron" v-for="item in PATRONS">
-                <a :href="item.link" target="_blank">
-                  <img :src="getImageURL('patrons',item.image)">
-                </a>
-              </div>
-            </div>
-            <div class="footer-sponsors layout-columns">
-              <div class="footer-sponsors-item" v-for="item in SPONSORS">
-                <a :href="item.link" target="_blank">
-                   <img :src="getImageURL('sponsors',item.image)">
-                </a>
-              </div>
-            </div>
+          <div class="layout-columns">
+
+             <div class="column-contact-info">
+
+
+<ul style="list-style-type: none;  padding-left: 0px;width: 270px;
+    margin: 0 auto;">
+    <br>
+    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <strong>Email</strong> : <a>pepqa@uniandes.edu.co</a></li>
+    <br>
+    <li><i class="fa fa-facebook-square" aria-hidden="true"></i> <strong>Facebook</strong>: <a href="https://www.facebook.com/pepqa/?fref=ts">/Pepqa</a></li>
+    <br>
+    <li><i class="fa fa-twitter-square" aria-hidden="true"></i><strong>Twitter</strong>: <a href="https://twitter.com/PEPQA_co">PEPQA_Co</a></li>
+    <br>
+    <li><i class="fa fa-linkedin-square" aria-hidden="true"></i> <strong>LinkedIn:</strong> <a>Pepqa2019</a></li>
+
+    </ul>
+    <hr>
+    <h4>Venue</h4>
+        <div style="padding-right: 5px;padding-left: 5px;">
+        Universidad Nacional de Colombia Sede Manizales <br>
+        Uniandes IAS Student Branch, <br>
+        Cra 1 Nº 18A- 12 Manizales, (Colombia)<br>
+        </div>
+
+
+             </div>
+
+             <div class="column-partners-sponsors-etc">
+                <div class="row layout-columns-extended">
+
+                  <div class="footer-patrons layout-row">
+                    <h2>Patrons</h2>
+                    <div class="layout-columns">
+                      <div class="footer-patrons-patron" v-for="item in PATRONS">
+                        <a :href="item.link" target="_blank" class="logo">
+                          <img :src="getImageURL('patrons',item.image)" :class="item.name" >
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="footer-sponsors layout-row">
+                    <h2>Sponsors - Organizer</h2>
+                    <div class="layout-columns">
+                      <div class="footer-sponsors-item" v-for="item in SPONSORS">
+                        <a :href="item.link" target="_blank"  class="logo">
+                          <img :src="getImageURL('sponsors',item.image)">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row layout-row footer-technical-cosponsors">
+                    <h2>Technical Co-Sponsors</h2>
+                    <div class="layout-columns">
+                      <div class="footer-technical-cosponsors-item" v-for="item in TECHNICAL">
+                        <a :href="item.link" target="_blank" class="logo">
+                        <img :src="getImageURL('technical-co-sponsors',item.image)" >
+                        </a>
+                      </div>
+                    </div>
+                </div>
+             </div>
+
           </div>
 
-          <div class="row layout-columns">
-            <div class="footer-technical-cosponsors">
-              <div class="footer-technical-cosponsors-item" v-for="item in TECHNICAL">
-                <a :href="item.link" target="_blank">
-                 <img :src="getImageURL('technical-co-sponsors',item.image)">
-                </a>
-              </div>
-            </div>
-            <div class="footer-technical-cosponsors"></div>
-          </div>
-
-
-
-          <div class="footer-contact-form"></div>
           <div class="footer-social-icons">
             <ul class="SOCIAL-Links">
               <li v-for="socialLink in SOCIAL">
@@ -143,11 +180,58 @@ export default {
       }
     }
   }
-
   .row{
     margin-right: 0px;
     margin-left: 0px;
   }
+  .logo{
+    font-size: 0px;
+    img{
+      height: 5vw;
+      max-height: 100px;
+      min-height: 50px;
+
+      &.UnalManizales{
+        box-sizing: border-box;
+        padding: 10px;
+      }
+    }
+  }
+  .footer-patrons,.footer-sponsors,.footer-technical-cosponsors{
+    h2{
+      text-align: left;
+    }
+  }
+  .footer-patrons-patron{
+    &:last-child{
+    }
+  }
+
+
+.row{width: 100%;}
+.column-contact-info{
+    width: 25vw;
+    min-width: 15em;
+    max-width: 30em;
+  }
+.column-partners-sponsors-etc{
+
+      border-left: 1px solid rgba(52, 58, 64, 0.14);
+    padding-left: 12px;
+
+
+ -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+
 </style>
 
 
