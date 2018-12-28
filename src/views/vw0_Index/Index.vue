@@ -8,7 +8,7 @@
       <swiper :options="swiperOption">
 
         <swiper-slide v-for="slide in SLIDES" v-bind:key="slide.image.alt">
-          <img :src="slide.image.src" :alt="slide.image.alt">
+          <img :src="slide.image.src" :alt="slide.image.alt" class="slider-img">
         </swiper-slide>
 
         <div class="swiper-pagination" slot="pagination"></div>
@@ -53,26 +53,51 @@ export default {
       SLIDES: [
         {
           image: {
-            src: 'https://via.placeholder.com/300.png/09f/fff',
-            alt: ''
+            src: 'img/slider/img2.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 1'
           }
-        },
-        {
+
+        },{
           image: {
-            src: 'https://via.placeholder.com/300.png/09f/f0b',
-            alt: ''
+            src: 'img/slider/img3.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 2'
           }
-        },
-        {
+        },{
           image: {
-            src: 'https://via.placeholder.com/300.png/09f/3ff',
-            alt: ''
+            src: 'img/slider/img6.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 3'
           }
-        },
-        {
+        },{
           image: {
-            src: 'https://via.placeholder.com/300.png/09f/002',
-            alt: ''
+            src: 'img/slider/img7.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 4'
+          }
+        },{
+          image: {
+            src: 'img/slider/img8.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 6'
+          }
+        },{
+          image: {
+            src: 'img/slider/img9.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 7'
+          }
+        },{
+          image: {
+            src: 'img/slider/img10.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 8'
+          }
+        }
+        ,{
+          image: {
+            src: 'img/slider/img11.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 9'
+          }
+        }
+        ,{
+          image: {
+            src: 'img/slider/img12.jpg',
+            alt: 'PEPQA | POWER ELECTRONICS AND POWER QUALITY APPLICATIONS | SLIDER | IMAGE 10'
           }
         }
       ],
@@ -99,6 +124,13 @@ export default {
   .swiper-slide {
     width: 80%;
     min-height: 200px;
+
+    img{
+          width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+    }
 
 
     display: -ms-flexbox;
