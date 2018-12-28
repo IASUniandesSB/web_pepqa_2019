@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/img/logos/technical-co-sponsors/technical_co_sponsors_ieee_logo.png"
   },
   {
-    "revision": "e4805ada181f0c6e357c",
-    "url": "/js/chunk-vendors.ec528077.js"
+    "revision": "5652109237a69a33c56d",
+    "url": "/js/chunk-vendors.d76cc6fc.js"
   },
   {
     "revision": "735ab4f94fbcd57074377afca324c813",
     "url": "/robots.txt"
   },
   {
-    "revision": "f45c49fe5a4c7f9a6c70",
-    "url": "/js/app.648d662c.js"
+    "revision": "45ed39bd8575d58b2c2e",
+    "url": "/js/app.760bd1bb.js"
   },
   {
-    "revision": "4bdc2828b76e8bbf409bf44b9919fc25",
+    "revision": "ab873f04b82c4142dab39f04889bb0cc",
     "url": "/index.html"
   },
   {
@@ -36,16 +36,16 @@ self.__precacheManifest = [
     "url": "/favicon/android-chrome-96x96.png"
   },
   {
-    "revision": "0fd5ee3c7f53df4571e1c383789a8f9c",
-    "url": "/favicon/browserconfig.xml"
-  },
-  {
     "revision": "2ae725d51ee68a8ee751805160a20a89",
     "url": "/favicon/favicon-16x16.png"
   },
   {
-    "revision": "7e03e73642052a49640e2834fb1d1395",
-    "url": "/favicon/html_code.html"
+    "revision": "1abb195f09235787901b30bc26fd5ddb",
+    "url": "/favicon/apple-touch-icon.png"
+  },
+  {
+    "revision": "0fd5ee3c7f53df4571e1c383789a8f9c",
+    "url": "/favicon/browserconfig.xml"
   },
   {
     "revision": "18059cde318e59e24e2176e7effe114d",
@@ -56,6 +56,10 @@ self.__precacheManifest = [
     "url": "/favicon/mstile-150x150.png"
   },
   {
+    "revision": "7e03e73642052a49640e2834fb1d1395",
+    "url": "/favicon/html_code.html"
+  },
+  {
     "revision": "c19fc7e9fff8e2d810c26ff21ce5a04d",
     "url": "/favicon/site.webmanifest"
   },
@@ -64,39 +68,35 @@ self.__precacheManifest = [
     "url": "/favicon/favicon-32x32.png"
   },
   {
-    "revision": "1abb195f09235787901b30bc26fd5ddb",
-    "url": "/favicon/apple-touch-icon.png"
-  },
-  {
     "revision": "ffb595095ef104fbe811c7e5e87502b9",
     "url": "/img/bg-pattern.ffb59509.png"
-  },
-  {
-    "revision": "e7abdfdca11241bb9028ed669fc6a720",
-    "url": "/img/logos/patrons/patron_unal_manizales_logo.jpg"
   },
   {
     "revision": "50af941698b49ad7c9488d8071ce38c3",
     "url": "/img/logos/sponsors/sponsor_ias_unal_manizales_sb_logo.png"
   },
   {
-    "revision": "81311023d24f62c9a7317b0ab12381c8",
-    "url": "/img/logos/sponsors/sponsor_ias_colombia_logo.png"
-  },
-  {
-    "revision": "5da229148753cf50ff41dfdbeda5aead",
-    "url": "/img/logos/sponsors/sponsor_ias_uniandes_sb_logo.png"
+    "revision": "e7abdfdca11241bb9028ed669fc6a720",
+    "url": "/img/logos/patrons/patron_unal_manizales_logo.jpg"
   },
   {
     "revision": "27300def7d6c73196492608bebdc0b84",
     "url": "/img/logos/technical-co-sponsors/sponsor_ias_logo.png"
   },
   {
-    "revision": "e4805ada181f0c6e357c",
-    "url": "/css/chunk-vendors.1562f6d0.css"
+    "revision": "5da229148753cf50ff41dfdbeda5aead",
+    "url": "/img/logos/sponsors/sponsor_ias_uniandes_sb_logo.png"
   },
   {
-    "revision": "f45c49fe5a4c7f9a6c70",
-    "url": "/css/app.223016d2.css"
+    "revision": "81311023d24f62c9a7317b0ab12381c8",
+    "url": "/img/logos/sponsors/sponsor_ias_colombia_logo.png"
+  },
+  {
+    "revision": "5652109237a69a33c56d",
+    "url": "/css/chunk-vendors.9e881f4c.css"
+  },
+  {
+    "revision": "45ed39bd8575d58b2c2e",
+    "url": "/css/app.b6e69649.css"
   }
 ];

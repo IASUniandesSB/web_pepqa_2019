@@ -1,24 +1,42 @@
 <template>
+
   <div class="view index">
-    <br>
+
+    <div class="view-content">
+
      <!-- swiper -->
       <swiper :options="swiperOption">
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide>
-        <swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide>
-        <swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide>
-        <swiper-slide>Slide 9</swiper-slide>
-        <swiper-slide>Slide 10</swiper-slide>
+
+        <swiper-slide v-for="slide in SLIDES" v-bind:key="slide.image.alt">
+          <img :src="slide.image.src" :alt="slide.image.alt">
+        </swiper-slide>
+
         <div class="swiper-pagination" slot="pagination"></div>
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
-    <br>
+
+      <br>
+
+      <div class="index-info" style="height:100px;border:1px solid black;color:black">
+        <h3>main info</h3>
+      </div>
+      <div class="index-submission" style="height:100px;border:1px solid black;color:black">
+        <h3>paper submission</h3>
+      </div>
+      <div class="index-topics" style="height:100px;border:1px solid black;color:black">
+        <h3>topics</h3>
+      </div>
+      <div class="index-features" style="height:100px;border:1px solid black;color:black">
+        <h3>features and benefits</h3>
+      </div>
+
+
   </div>
+
+  </div>
+
+
 </template>
 
 <script>
@@ -32,9 +50,34 @@ export default {
   data(){
     return{
       LOCATION : locationJSON,
-        swiperOption: {
-          slidesPerView: 'auto',
-          spaceBetween: 30,
+      SLIDES: [
+        {
+          image: {
+            src: 'https://via.placeholder.com/300.png/09f/fff',
+            alt: ''
+          }
+        },
+        {
+          image: {
+            src: 'https://via.placeholder.com/300.png/09f/f0b',
+            alt: ''
+          }
+        },
+        {
+          image: {
+            src: 'https://via.placeholder.com/300.png/09f/3ff',
+            alt: ''
+          }
+        },
+        {
+          image: {
+            src: 'https://via.placeholder.com/300.png/09f/002',
+            alt: ''
+          }
+        }
+      ],
+      swiperOption: {
+          slidesPerView: '1',
           pagination: {
             el: '.swiper-pagination',
             type: 'progressbar'
@@ -87,8 +130,17 @@ export default {
     width: 40%;
   }
 
-  .swiper-pagination-progressbar-fill {
-    background-color:lightgreen !important;
+  .view-content{
+    background-color: white;
+    padding: 0.25em;
+    margin: 1em 0em;
+    box-sizing: border-box;
+
+    border-radius: 0.25em;
+
+    width: 100%;
   }
+
+
 
 </style>

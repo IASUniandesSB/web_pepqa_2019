@@ -46,4 +46,25 @@ export default {
 .fade-leave-active {
   opacity: 0
 }
+
+#app {
+    padding: 0em;
+}
+html{
+  position: fixed;
+    left: 0px;
+    width: 100vw;
+    min-height: 100vh;
+}
+@media (min-width: 600px) {
+#app {
+    padding: 0px 3em;
+}
+html{
+  position: fixed;
+    left: 0px;
+    width: 100vw;
+    min-height: 100vh;
+}
+}
 </style>
