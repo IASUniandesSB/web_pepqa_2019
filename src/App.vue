@@ -49,12 +49,13 @@ export default {
 
 #app {
     padding: 0em;
+    height: 100vh;
+    overflow-y: scroll;
 }
 html{
   position: fixed;
     left: 0px;
     width: 100vw;
-    min-height: 100vh;
 }
 @media (min-width: 600px) {
 #app {
@@ -64,7 +65,6 @@ html{
   position: fixed;
     left: 0px;
     width: 100vw;
-    min-height: 100vh;
 }
 }
 </style>
