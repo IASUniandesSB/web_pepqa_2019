@@ -115,7 +115,7 @@ export default {
 h1{
     font-size: 32px;
     padding: 0.5em 0em;
-    padding-left: 0.25em;
+    padding-left: 2em;
     text-align: left;
     font-weight: 400;
     line-height: 100%;
