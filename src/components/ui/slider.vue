@@ -3,9 +3,10 @@
   <!-- swiper -->
   <swiper :options="swiperOption">
 
-    <swiper-slide v-for="slide in SLIDES" v-bind:key="slide.image.alt">
+    <swiper-slide v-for="slide in SLIDES" v-bind:key="slide.image.id">
       <img :data-src="slide.image.src" :src="slide.thumbs.src"  :alt="slide.image.alt" class="slider-img swiper-lazy">
-       <div class="swiper-lazy-preloader"></div>
+      <div class="swiper-lazy-preloader"></div>
+      <h1 class="swiper-watermark" v-if="slide.image.id > 1">PEPQA 2019</h1>
     </swiper-slide>
 
     <div class="swiper-pagination" slot="pagination"></div>
@@ -27,11 +28,13 @@ export default {
       const SLIDE = {
 
         image: {
+          id: k,
           src: 'img/slider/hd/hd_img_' + k + '.jpg',
           alt: "PEPQA | POWER ELECTRONICS " + k
         },
 
         thumbs: {
+          id: k,
           src: 'img/slider/thumbs/hd_img_'+k+'.jpg',
           alt: ''
         }
@@ -109,6 +112,17 @@ export default {
   }
   .swiper-slide:nth-child(3n) {
     width: 40%;
+  }
+
+
+  .swiper-watermark{
+    position: absolute;
+    top: 0.5em;
+    left: -6.25em;
+    color: rgba(0,0,0,0.25);
+    font-size: 13em;
+    font-weight: 900;
+    font-family: INHERIT;
   }
 
 </style>

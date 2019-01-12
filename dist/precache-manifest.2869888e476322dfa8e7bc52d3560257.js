@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "f46df4a5314c8f7f7d38e332207f4e71",
-    "url": "/img/slider/thumbs/hd_img_6.jpg"
+    "revision": "34d83fe5b92106c0236723132f5c39f7",
+    "url": "/img/slider/thumbs/hd_img_5.jpg"
   },
   {
     "revision": "ecb1186b4f85f981a8ac0fc201d955c7",
@@ -56,16 +56,16 @@ self.__precacheManifest = [
     "url": "/img/slider/thumbs/hd_img_4.jpg"
   },
   {
+    "revision": "f46df4a5314c8f7f7d38e332207f4e71",
+    "url": "/img/slider/thumbs/hd_img_6.jpg"
+  },
+  {
     "revision": "a2c0fa6203556a1b79c615744d7e94f5",
     "url": "/img/slider/thumbs/hd_img_3.jpg"
   },
   {
     "revision": "3d8d068a5bc9c2f82d0ca7f3ba748531",
     "url": "/img/slider/thumbs/hd_img_14.jpg"
-  },
-  {
-    "revision": "34d83fe5b92106c0236723132f5c39f7",
-    "url": "/img/slider/thumbs/hd_img_5.jpg"
   },
   {
     "revision": "bf5ed73e418d98ef4446b2ef2670040f",
@@ -100,16 +100,16 @@ self.__precacheManifest = [
     "url": "/img/slider/hd/hd_img_2.jpg"
   },
   {
-    "revision": "42f8d12902f82d64ca8292be87ebb5fe",
-    "url": "/img/slider/hd/hd_img_13.jpg"
+    "revision": "c3f2cfb1ac3695cf60f0c1f7bab16293",
+    "url": "/img/slider/hd/hd_img_12.jpg"
   },
   {
     "revision": "22a07ac623bf42c0edd98844bbd049dd",
     "url": "/img/slider/hd/hd_img_4.jpg"
   },
   {
-    "revision": "c3f2cfb1ac3695cf60f0c1f7bab16293",
-    "url": "/img/slider/hd/hd_img_12.jpg"
+    "revision": "42f8d12902f82d64ca8292be87ebb5fe",
+    "url": "/img/slider/hd/hd_img_13.jpg"
   },
   {
     "revision": "ae7715e60ef4cb5ab22b4cf169439ab7",
@@ -172,8 +172,8 @@ self.__precacheManifest = [
     "url": "/img/logos/technical-co-sponsors/technical_co_sponsors_ieee_colombia_logo.png"
   },
   {
-    "revision": "44aae40fc0b3a6542d45c476b914d836",
-    "url": "/favicon/favicon-32x32.png"
+    "revision": "2ae725d51ee68a8ee751805160a20a89",
+    "url": "/favicon/favicon-16x16.png"
   },
   {
     "revision": "117d1d7518ac684810640fe300d7fb0b",
@@ -192,12 +192,12 @@ self.__precacheManifest = [
     "url": "/img/header_logo.18059cde.png"
   },
   {
-    "revision": "c19fc7e9fff8e2d810c26ff21ce5a04d",
-    "url": "/favicon/site.webmanifest"
-  },
-  {
     "revision": "d2ea71f1b9dc39f66fe52693a28e18f1",
     "url": "/favicon/safari-pinned-tab.svg"
+  },
+  {
+    "revision": "c19fc7e9fff8e2d810c26ff21ce5a04d",
+    "url": "/favicon/site.webmanifest"
   },
   {
     "revision": "e7bfd1d1db10b6317c9818f1f9b3d688",
@@ -208,8 +208,8 @@ self.__precacheManifest = [
     "url": "/favicon/html_code.html"
   },
   {
-    "revision": "2ae725d51ee68a8ee751805160a20a89",
-    "url": "/favicon/favicon-16x16.png"
+    "revision": "44aae40fc0b3a6542d45c476b914d836",
+    "url": "/favicon/favicon-32x32.png"
   },
   {
     "revision": "0fd5ee3c7f53df4571e1c383789a8f9c",

@@ -13,7 +13,7 @@
   </div>
 
   <div class="row">
-    <b-col col lg="3">
+    <b-col col lg="2" class="info-col">
       <img src="../../assets/pepqalogo.gif" width="180px">
       <button type="button" class="btn btn-success" style="max-width:10em">
         <i class="far fa-file-alt"></i>
@@ -24,7 +24,7 @@
         <h3>DOWNLOAD <br> CALL FOR PAPER</h3>
       </button>
     </b-col>
-    <b-col col lg="6">
+    <b-col col lg="6"  class="info-col">
 
       <p>
         The 4th International IEEE Workshop on Power Electronics and Power Quality Applications will be held on
@@ -48,11 +48,11 @@
       </p>
 
     </b-col>
-    <b-col col lg="3">
+    <b-col col lg="4"  class="info-col">
 
       <div class="well">
 
-        <strong style="font-weight:800"> Submit your technical research works for PEPQA 2019</strong>
+        <h1> Submit your technical research works for  <strong>PEPQA 2019</strong></h1>
 
         <br>
         <ul>
@@ -115,7 +115,7 @@ export default {
 h1{
     font-size: 32px;
     padding: 0.5em 0em;
-    padding-left: 2em;
+    padding-left: 1em;
     text-align: left;
     font-weight: 400;
     line-height: 100%;
@@ -133,6 +133,7 @@ p{
       background-color: #305f3a;
     color: #fff;
         min-height: 20px;
+        height: 100%;
     padding: 19px;
     margin-bottom: 20px;
     border: 1px solid #e3e3e3;
@@ -141,12 +142,27 @@ p{
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 
+h1{
+  font-size: 1.35em;
+  font-weight: 200;
+  padding: 0px;
+  margin: 0px;
+  strong{
+    font-weight: 800;
+  }
+}
     ul li{
-      font-size: 10px;
+      font-size: 16px;
+      margin: 1em 0em;
     }
 }
 button{
   margin: 1em 0em;
   width: 10em;
+}
+
+
+.info-col{
+  height: 25em !important;
 }
 </style>
